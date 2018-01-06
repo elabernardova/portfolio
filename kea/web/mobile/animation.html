@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spritesheet animation</title>
+    <style>
+        .wine{
+            background: url(images/spritesheet%20wine.svg);
+        width: 998px;
+            height: 214px;
+
+            animation: walk 4s steps(10)  infinite;
+
+        }
+
+        .contains_div{
+            animation: moveCharacter 2s ease-out forwards;
+        }
+
+        @keyframes walk{
+            from{
+                background-position: 0px;
+            }
+            to{
+                background-position: -100px;
+            }
+            @keyframes moveCharacter{
+                to{
+                    transform: translateX(500px)
+                }
+
+
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="wine">
+        <div class="contains_div">
+      </div>
+    </div>
+
+   <img src="images/spritesheet%20wine.svg" alt="walk cycle - main character">
+
+    </body>
+</html>

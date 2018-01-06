@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="myscripts.js"></script>
+    <title>Eliska Bernardova</title>
+    <div class="homeup" id="myTopnav">
+        <a href="index.html">HOME</a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="projectpooldrummachine.html">PREV</a>
+        <a href="basicvideo.html">NEXT</a>
+    </div>
+</head>
+
+<img src="images/hands.png" alt="hands" class="hands" width="250px">
+<button onclick="typeWriter()" class="button1">CLICK</button>
+
+<p id="demo" class="demo"></p>
+
+<script>
+    var i = 0;
+    var txt = 'Group Project - Built your own digital business. Me and my group we created first WEDDING DIRECTORY APP on Danish market and coded website for our business, which connects Wedding Busnisess and Couples. .';
+    var speed = 40;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+</script>
+
+<a href="Design-Documentation-1%20(2).pdf" class="docu">DESIGN DOCUMENTATION</a>
+<a href="Report_WeddingDirectory.pdf" class="report">REPORT</a>
+<a href="images/2Business%20Model%20Canvas.jpg" class="canvas">BUSINESS MODEL CANVAS</a>
+<a href="presentation.pdf" class="pitch">FINAL PITCH</a>
+<a href="http://ailishkearns.com/wedding_directory/index.html" class="wwebsite">WEDDING DIRECTORY WEBSITE</a>
+<a href="https://xd.adobe.com/view/36264c59-064f-48f7-8140-e06c408483a0/" class="app">APP PROTOTYPE</a>
+
+
+
+
+
+
+
+
+
+<a href="home.html" class="navItem navItemContact" rel="Contact"><span class="text">Contact</span></a>
+<a href="aboutme.html" class="navItem navItemAbout" rel="About"><span class="text">About</span></a>
+
+
+<div class="home" id="myTopnav">
+    <a href="index.html">HOME</a>
+</div>

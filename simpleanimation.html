@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="myscripts.js"></script>
+    <title>Eliska Bernardova</title>
+    <div class="homeup" id="myTopnav">
+        <a href="index.html">HOME</a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="redesign.html">PREV</a>
+        <a href="spritesheet%20animation.html">NEXT</a>
+    </div>
+</head>
+
+
+
+<img src="images/girl.png" class="girl" alt="GIRL" style="width: 350px;">
+
+<a href="projects/basic%2520animation/index.html" class="simpleanimation">SIMPLE ANIMATION</a>
+
+
+<button onclick="typeWriter()" class="button4">CLICK</button>
+
+<p id="demo" class="demo"></p>
+
+<script>
+    var i = 0;
+    var txt = 'Simple animation with 5 buttons. With clicking on each button, there is a different movement of the picture.';
+    var speed = 40;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+</script>
+
+<a href="home.html" class="navItem navItemContact" rel="Contact"><span class="text">Contact</span></a>
+<a href="aboutme.html" class="navItem navItemAbout" rel="About"><span class="text">About</span></a>
+
+
+<div class="home" id="myTopnav">
+    <a href="index.html">HOME</a>
+</div>

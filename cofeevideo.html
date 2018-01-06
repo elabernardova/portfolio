@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="myscripts.js"></script>
+    <title>Eliska Bernardova</title>
+    <div class="homeup" id="myTopnav">
+        <a href="index.html">HOME</a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="basicvideo.html">PREV</a>
+        <a href="index.html">NEXT</a>
+    </div>
+</head>
+
+
+<img src="images/coffeegirl1.png" class="coffeegirl" alt="COFFEE GIRL" style="width: 350px;">
+
+
+
+
+<button onclick="typeWriter()" class="button2">CLICK</button>
+
+<p id="demo" class="demo"></p>
+
+<script>
+    var i = 0;
+    var txt = 'Copenhagen Coffee Guide is a project we created with my group. It is a video showing 5 coffee shops in Copenhagen you should definitely visit. It was made for City Walks and Meet up. ';
+    var speed = 40;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+</script>
+
+
+
+<a href="1storyboard.pdf" class="storyboardd">STORYBOARD</a>
+
+<a href="http://lindaexnar.com/kea/web/citywalk.coffee/" class="coffeevideo">COPENHAGEN COFFEE GUIDE</a>
+
+
+
+
+
+<a href="home.html" class="navItem navItemContact" rel="Contact"><span class="text">Contact</span></a>
+<a href="aboutme.html" class="navItem navItemAbout" rel="About"><span class="text">About</span></a>
+
+
+<div class="home" id="myTopnav">
+    <a href="index.html">HOME</a>
+</div>

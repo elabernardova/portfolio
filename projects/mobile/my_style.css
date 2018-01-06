@@ -1,0 +1,129 @@
+/*
+
+
+general settings
+
+*/
+
+* a:href {
+    color: gray;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    font-family: aktiv-grotesk, sans-serif;
+font-size: 17px;
+    font-weight: 100;
+
+}
+
+h3 {
+    text-align: center;
+ font-family: aktiv-grotesk, sans-serif;
+font-size: 17px;
+font-weight: 200;
+}
+h4 {
+    text-align: center;
+ font-family: aktiv-grotesk, sans-serif;
+font-size: 17px;
+font-weight: 100;
+}
+h5 {
+    text-align: center;
+ font-family: aktiv-grotesk, sans-serif;
+font-size: 17px;
+font-weight: 100;
+
+}
+
+main {
+    display: block;
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    font-family: aktiv-grotesk, sans-serif;
+}
+
+main {
+    font-size: 1em;
+    margin: auto
+}
+
+.a17 {
+    font-family: aktiv-grotesk, sans-serif;
+}
+
+#style-photo {
+    /*   */
+}
+
+nav a:visited {
+    color: black
+}
+
+nav a:link {
+    color: black
+}
+
+main img {
+    align-content: center
+}
+
+body img {
+    align-content: center;
+}
+
+body text {
+    align-content: center;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+width: 10em;
+}
+
+body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    font-family: aktiv-grotesk, sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align-last: center;
+
+}
+
+body {
+    font-family: aktiv-grotesk, sans-serif;
+}
+
+p {
+    text-align: center
+}
+footer {
+
+text-align: center;
+font-family: aktiv grotesk, sans-serif;
+    font-size: 10px
+}
+.topnav a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}

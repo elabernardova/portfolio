@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="script.js"></script>
+<title>Eliska Bernardova</title>
+
+<head>
+       <div class="homeup" id="myTopnav">
+        <a href="index.html">HOME</a>
+    </div>
+
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">PREV</a>
+        <a href="redesign.html">NEXT</a>
+    </div>
+
+</head>
+
+    <img src="images/contemporary%20moodboard.png" style="width: 450px;" class="moodboard">
+
+
+<body>
+
+
+    <a href="home.html" class="navItem navItemContact" rel="Contact"><span class="text">Contact</span></a>
+    <a href="aboutme.html" class="navItem navItemAbout" rel="About"><span class="text">About</span></a>
+
+
+
+
+
+    <button onclick="typeWriter()" class="button">CLICK</button>
+
+    <p id="demo" class="demo"></p>
+
+    <script>
+        var i = 0;
+        var txt = 'My first responsive website based on Contemporary style';
+        var speed = 40;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+
+    </script>
+
+
+
+
+    <a href="http://eliby.one/kea/web/mobile/" class="responsive">
+ RESPONSIVE WEBSITE
+    </a>
+
+
+
+    <div class="home" id="myTopnav">
+        <a href="index.html">HOME</a>
+    </div>
+
+
+</body>
+</html>

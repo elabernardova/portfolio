@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spritesheet animation</title>
+    <style>
+
+        /* obrázek lahve */
+        .lines {
+            background: url("images/lines.svg") repeat-x;     /* opakuji jen horizontálně */
+            background-size: auto 100px;                            /* výška obrázku 214px */
+            width: 100px;                                           /* šířka jen na jednu lahev */
+            height: 100px;
+            animation: walk 1s steps(7) infinite;                  /* posun o celou šíři obrázku 998px v 10 krocích */
+        }
+
+        .contains_div {
+            animation: moveCharacter 2s ease-out forwards;
+        }
+
+        @keyframes walk {
+            from {
+                background-position: 0px;
+            }
+            to {
+                background-position: -998px;
+            }
+        }
+
+        @keyframes moveCharacter {
+
+            to {
+                transform: translateX(500px)
+            }
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="lines">
+        <div class="contains_div">
+        </div>
+    </div>
+
+    </body>
+</html>

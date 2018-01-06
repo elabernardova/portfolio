@@ -1,0 +1,89 @@
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+        <link rel="stylesheet" href="style.css" href="script.js.js">
+  <title>Audio</title>
+  </head>
+  <body>
+
+    <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+
+ function bigImg(x) {
+    x.style.height = "426px";
+    x.style.width = "640px";
+}
+
+function normalImg(x) {
+    x.style.height = "250px";
+    x.style.width = "200px";
+}
+
+function myFunction() {
+    document.getElementById("color").style.color = "red";
+}
+
+
+ function changeimg ()   {
+         var angel = document.getElementsByClassName("angel")[0];
+
+         if(angel.src == "file:///C:/Users/Eli%C5%A1ka/Desktop/projectpool1drummachine/images/angel%20face.png")  {
+            angel.src =  "file:///C:/Users/Eli%C5%A1ka/Desktop/projectpool1drummachine/images/hand2.png";
+          }
+         else{
+            minus.src = "file:///C:/Users/Eli%C5%A1ka/Desktop/projectpool1drummachine/images/angel face.png";
+        }
+ }
+
+
+  var path = document.querySelector('.st0');
+var length = path.getTotalLength();
+
+         var path = document.querySelector('.st2');
+var length = path.getTotalLength();
+
+
+
+  function showImg()
+{
+var obj=document.getElementById('image01');
+obj.className = 'show';
+}
+
+
+          function showImg()
+{
+var obj=document.getElementById('image02');
+obj.className = 'show';
+}
+
+   </script>
+
+
+         <img src="images/hand.png" id="image01" src="9.jpg" class="hide">
+
+      <img src="images/face.png" id="image02" src="9.jpg" class="hide">
+<br/>
+
+
+      <img src="images/angel%20face.png" class="angel" onclick="changeimg(this)">
+
+      <input class="button" type="button" value="1.PLAY"  onclick="play()">
+<audio id="audio" src="sounds/Voices.mp3" ></audio>
+
+       <p id="color" onclick="myFunction()">2.CLICK</p>
+
+
+
+
+    <p>3. CLICK ON ANGEL</p>
+
+<input type="button" onclick = "showImg()" value= "4.CLICK" class="button1">
+<input type="button" onclick = "showImg()" value= "5.CLICK" class="button2">
+
+ </body>
+
+</html>

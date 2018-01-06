@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="myscripts.js"></script>
+    <title>Eliska Bernardova</title>
+    <div class="homeup" id="myTopnav">
+        <a href="index.html">HOME</a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="digitalbusiness.html">PREV</a>
+        <a href="cofeevideo.html">NEXT</a>
+    </div>
+</head>
+
+
+
+<img src="images/nights.png" style="width: 650px;" height="350px;" class="night">
+
+
+
+
+<a href="https://www.youtube.com/watch?v=fyMFZzJOnlU" class="video1">COPENHAGEN CITY NIGHTS VIDEO</a>
+<button onclick="typeWriter()" class="button1">CLICK</button>
+
+<p id="demo" class="demo"></p>
+
+<script>
+    var i = 0;
+    var txt = 'Narration without words.';
+    var speed = 40;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+</script>
+
+<a href="home.html" class="navItem navItemContact" rel="Contact"><span class="text">Contact</span></a>
+<a href="aboutme.html" class="navItem navItemAbout" rel="About"><span class="text">About</span></a>
+
+
+<div class="home" id="myTopnav">
+    <a href="index.html">HOME</a>
+</div>
