@@ -1,0 +1,140 @@
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Bicí</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script>
+
+            /* funkce hrající zvuky uvedené v <audio> tagu */
+            function hrej(id) {
+
+                document.getElementById(id).play();
+
+            }
+
+            /* funkce dohrající zvuk */
+            function dohrej(id) {
+
+                window.setTimeout(function(){
+                    document.getElementById(id).pause();
+                    document.getElementById(id).currentTime = 0;
+                }, 700);
+
+            }
+
+            /* funkce zjišťující stisknuté klávesy: při stisknutí zahraju zvuk a přiřadím CSS třídu */
+            function klavesaDolu() {
+
+                if(event.keyCode == 81) {
+                    hrej("snare");
+                    document.getElementById("keyboardQ").className = "active";
+                }
+
+                if(event.keyCode == 87) {
+                    hrej("clap");
+                    document.getElementById("keyboardW").className = "active";
+                }
+
+                if(event.keyCode == 69) {
+                    hrej("splash");
+                    document.getElementById("keyboardE").className = "active";
+                }
+
+                if(event.keyCode == 82) {
+                    hrej("boom3");
+                    document.getElementById("keyboardR").className = "active";
+                }
+
+                if(event.keyCode == 65) {
+                    hrej("hhopen");
+                    document.getElementById("keyboardA").className = "active";
+                }
+
+                if(event.keyCode == 83) {
+                    hrej("boom1");
+                    document.getElementById("keyboardS").className = "active";
+                }
+
+            }
+
+            /* funkce zjišťující uvolněné klávesy: při uvolnění klávesy smažu CSS třídu */
+            function klavesaNahoru() {
+
+                if(event.keyCode == 81) {
+                    dohrej("snare");
+                    document.getElementById("keyboardQ").className = "";
+                }
+
+                if(event.keyCode == 87) {
+                    dohrej("clap");
+                    document.getElementById("keyboardW").className = "";
+                }
+
+                if(event.keyCode == 69) {
+                    dohrej("splash");
+                    document.getElementById("keyboardE").className = "";
+                }
+
+                if(event.keyCode == 82) {
+                    dohrej("boom3");
+                    document.getElementById("keyboardR").className = "";
+                }
+
+                if(event.keyCode == 65) {
+                    dohrej("hhopen");
+                    document.getElementById("keyboardA").className = "";
+                }
+
+                if(event.keyCode == 83) {
+                    dohrej("boom1");
+                    document.getElementById("keyboardS").className = "";
+                }
+
+            }
+
+        </script>
+    </head>
+
+    <body onkeydown="klavesaDolu();" onkeyup="klavesaNahoru();">
+
+        <main>
+
+            <!-- Seznam zvuků přednahraných do prohlížeče -->
+
+            <audio preload="auto" id="snare">
+                <source src="http://www.soundsboom.com/download/101104/drumspercussion-riddles-snare.mp3" type="audio/mpeg">
+            </audio>
+            <audio preload="auto" id="clap">
+                <source src="http://www.soundsboom.com/download/101103/drumspercussion-riddles-clap.mp3" type="audio/mpeg">
+            </audio>
+            <audio preload="auto" id="splash">
+                <source src="http://www.soundsboom.com/download/101096/drumspercussion-splash.mp3" type="audio/mpeg">
+            </audio>
+            <audio preload="auto" id="boom3">
+                <source src="http://www.soundsboom.com/download/101095/drumspercussion-boom-3.mp3" type="audio/mpeg">
+            </audio>
+            <audio preload="auto" id="hhopen">
+                <source src="http://www.soundsboom.com/download/101084/drumspercussion-hh-open.mp3" type="audio/mpeg">
+            </audio>
+            <audio preload="auto" id="boom1">
+                <source src="http://www.soundsboom.com/download/101080/drumspercussion-boom-1.mp3" type="audio/mpeg">
+            </audio>
+
+            <!-- tlačítka bicí soupravy -->
+
+            <button id="keyboardQ" ontouchstart="hrej('snare');" onmousedown="hrej('snare');">SNARE [q]</button>
+            <button id="keyboardW" ontouchstart="hrej('clap');" onmousedown="hrej('clap');">CLAP [w]</button>
+            <button id="keyboardE" ontouchstart="hrej('splash');" onmousedown="hrej('splash');">SPLASH [e]</button>
+            <button id="keyboardR" ontouchstart="hrej('boom3');" onmousedown="hrej('boom3');">BOOM3[r]</button><br/>
+            <button id="keyboardA" ontouchstart="hrej('hhopen');" onmousedown="hrej('hhopen');">HH [a]</button>
+            <button id="keyboardS" ontouchstart="hrej('boom1');" onmousedown="hrej('boom1');">BOOM1[s]</button>
+
+        </main>
+    </body>
+
+</html>

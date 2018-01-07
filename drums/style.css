@@ -1,0 +1,89 @@
+body {
+  text-align:center;
+  margin:125px;
+}
+
+main button {
+    background: none;
+	border: 0.1em solid black;
+	height:8em;
+	width:8em;
+	display:inline-block;
+	margin:0.0;
+	padding:0;
+	font-weight: 200;
+	font-size: 1.25em;
+	font-family: Helvetica;
+	color:0000FE;
+	//transition: border 0.1s ease-in-out;
+	box-shadow: 0.0em 0.0em 0.5em #222;
+}
+
+main button:active, main button.active {
+	border: 0.3em solid rgb(255,128,32);
+}
+main button:nth-child(2):active,main button:nth-child(2).active {
+	border: 0.3em solid #E7C697;
+}
+main button:nth-child(3):active,main button:nth-child(3).active {
+	border: 0.3em solid #0D98BA;
+}
+main button:nth-child(4):active,main button:nth-child(4).active {
+	border: 0.3em solid #1CD3A2;
+}
+main button:nth-child(5):active,main button:nth-child(5).active {
+	border: 0.3em solid #FCB4D5;
+}
+main button:nth-child(6):active,main button:nth-child(6).active {
+	border: 0.3em solid #8A795D;
+}
+main button:nth-child(7):active,main button:nth-child(7).active {
+	border: 0.3em solid #C0448F;
+}
+main button:nth-child(8):active,main button:nth-child(8).active {
+	border: 0.3em solid #AA00D0;
+}
+main button:nth-child(9):active,main button:nth-child(9).active {
+	border: 0.3em solid #45CEA2;
+}
+main button:nth-child(10):active,main button:nth-child(10).active {
+	border: 0.3em solid #1974D2;
+}
+
+
+
+
+main>ul.tiles li:nth-child(2) a {
+  background-color:#0D98BA;
+}
+main>ul.tiles li:nth-child(3) a {
+  background-color:#1CD3A2;
+}
+main>ul.tiles li:nth-child(4) a {
+  background-color:#FF7F49;
+}
+main>ul.tiles li:nth-child(5) a {
+  background-color:#FCB4D5;
+}
+main>ul.tiles li:nth-child(6) a {
+  background-color:#1CD3A2;
+}
+main>ul.tiles li:nth-child(7) a {
+  background-color:#1974D2;
+}
+main>ul.tiles li:nth-child(8) a {
+  background-color:#AAF0D;
+}
+main>ul.tiles li:nth-child(9) a {
+  background-color:#8E4585;
+}
+main>ul.tiles li:nth-child(10) a {
+  background-color:#8A795D;
+}
+
+main>ul.tiles li:nth-child(11) a {
+  background-color:#45CEA2;
+}
+main>ul.tiles li:nth-child(12) a {
+  background-color:#C0448F;
+}

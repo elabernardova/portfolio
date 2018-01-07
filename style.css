@@ -143,14 +143,14 @@ a {
     font-size: 35px;
     font-family: Helvetica Neue;
     text-decoration: none;
-    margin-left: 460px;
+    margin-left: 660px;
 }
 .game:hover {
     color: #0000fe;
     font-size: 35px;
     font-family: Helvetica Neue;
     text-decoration: none;
-    margin-left: 460px;
+    margin-left: 560px;
     text-decoration: underline;
     margin-top: -100px;
 }
@@ -639,7 +639,6 @@ label:after {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 150px;
 }
 .text3 {
     padding-left: 300px;
@@ -647,60 +646,65 @@ label:after {
     font-size: 20px;
 }
 p {
-    font-size: 18px;
+    font-size: 15px;
 }
-
-.drums{
+.drums {
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-.drums1{
-     margin-left: 700px;
+.drums1 {
+    margin-left: 00px;
     margin-right: auto;
-
 }
-.drums1:hover{
-     margin-left: 700px;
+.drums1:hover {
+    margin-left: 700px;
     margin-right: auto;
     color: blue;
     text-decoration: underline;
-
 }
 .st0 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 25s linear alternate infinite;
-}
-
-@keyframes dash {
-  from {
+    stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+    animation: dash 25s linear alternate infinite;
 }
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
 
-.svg{
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.svg {
     margin-left: 200px;
-    margin-top: -550px
+    margin-top: -650px;
 }
 .st1 {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear alternate infinite;
-}
-
-@keyframes dash {
-  from {
+    stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+    animation: dash 5s linear alternate infinite;
 }
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
 
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profil{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media only screen and (max-width: 320px) {
     h1 {
         font-size: 15px;
@@ -832,12 +836,12 @@ p {
     }
 
     .game {
-        padding-left: 420px;
+        margin-left: 35px;
         font-size: 20px;
     }
 
     .game:hover {
-        padding-left: 320px;
+        margin-left: 35px;
         font-size: 20px;
         text-decoration: underline;
     }
@@ -953,5 +957,14 @@ p {
 
     .me1 {
         margin-top: 30px;
+    }
+
+    .drums {
+        margin-top: -150px;
+    }
+
+    .svg {
+        margin-left: 70px;
+        margin-top: 0px;
     }
 }
